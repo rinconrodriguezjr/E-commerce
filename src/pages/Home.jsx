@@ -145,8 +145,8 @@ const Home = () => {
                       Price:
                       <Card.Text>
                         {/* <b>Description:</b> {product.description} <br /> <br /> */}
-                        {product.price} <Button variant="primary" className="buttonhomecart"> <FontAwesomeIcon icon="fa-solid fa-cart-shopping" /> </Button>
-                        
+                        {product.price} 
+                        <img style={{border: "1px solid var(--primary)", borderRadius: 4}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR5JREFUSEvN1cExBUEUheHvRYAMiAARIAIywJYFIkAEbNgiAmRABIgAESAC6qqeV2PevOmuGqOczSz6zv379JnbMzKwRgP396eAz+TmHZc4+A13dQcVoOq7hru+kLYj2scJbrExBGAWb6nxAl76QKaFHBls9mj8iOV4fxpgCQ89AK+Y7wLEWuxiEdvpqyrhVc6PcZQDbOEigb7tZhTZPSOe4+xygxYzMZPOMxx1qdrQPVarwhzgFHu4QjToUszMSvNIc4AIKmyH5hCO2lTVfaRwx3U5QDS7wXq6OsJRmyLQwzanJYCY5utcwml94nopAdQ/2S7OE2J+fqgUUGhgsqwUcIYdnGO30aZrrfiHU7/Km5vqWisGDO5g8Az+L+ALYZk0GaU3ojwAAAAASUVORK5CYII="/>
                       </Card.Text>
                     </Card.Body>
                   </Link>
