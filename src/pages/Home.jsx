@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { filterProductsCategoryThunk, getProductsThunk, productsFilterHeadLineThunk, productsSlice } from "../store/slices/products.slice";
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "reactstrap";
-import { AiOutlineShoppingCart } from 'react-icons/Ai';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const Home = () => {
@@ -145,8 +145,8 @@ const Home = () => {
                       Price:
                       <Card.Text>
                         {/* <b>Description:</b> {product.description} <br /> <br /> */}
-                        {product.price} <Button variant="primary" className="buttonhomecart"> <AiOutlineShoppingCart /> </Button>
-
+                        {product.price} <Button variant="primary" className="buttonhomecart"> <FontAwesomeIcon icon="fa-solid fa-cart-shopping" /> </Button>
+                        
                       </Card.Text>
                     </Card.Body>
                   </Link>
