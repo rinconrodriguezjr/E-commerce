@@ -30,7 +30,7 @@ const Cart = ({show, handleClose}) => {
                             <Col lg={6}> {cart?.product?.title}</Col>
                             <Col lg={2}> <img src={cart?.product?.images[0].url} alt="" style={{maxWidth: 50, maxHeight: 30, minHeight: 30}}/> <br /></Col>
                             <Col lg={4}> $ {cart?.product?.price}</Col>
-                            
+                            <Col></Col>
                         </Row> <br /> 
                         {/* {cart?.product.title} <br />
                         <img src={cart?.product.images[0].url} alt="" style={{maxWidth: 50, maxHeight: 50, minHeight: 48}}/> <br />
