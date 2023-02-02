@@ -19,22 +19,23 @@ const Cart = ({show, handleClose}) => {
     return (
         <Offcanvas placement='end' show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                <Offcanvas.Title style={{color: "var(--primary)"}}> <b>PRODUCTS SELECTED</b> </Offcanvas.Title>
             </Offcanvas.Header>
             <Container className="my-3">
-                <b>PRODUCTS SELECTED</b>
+                
                 <Offcanvas.Body> 
                     {carts.map(cart =>(
-                        <li key={cart?.updatedAt}>
-                        <Row> 
-                            <Col> {cart?.product?.title}</Col>
-                            <Col> <img src={cart?.product?.images[0].url} alt="" style={{maxWidth: 50, maxHeight: 50, minHeight: 48}}/> <br /></Col>
-                            <Col> $ {cart?.product?.price}</Col>
-                        </Row>
+                        <div key={cart?.updatedAt}>
+                        <Row style={{border: "1px solid var(--primary)"}}> 
+                            <Col lg={6}> {cart?.product?.title}</Col>
+                            <Col lg={2}> <img src={cart?.product?.images[0].url} alt="" style={{maxWidth: 50, maxHeight: 30, minHeight: 30}}/> <br /></Col>
+                            <Col lg={4}> $ {cart?.product?.price}</Col>
+                            
+                        </Row> <br /> 
                         {/* {cart?.product.title} <br />
                         <img src={cart?.product.images[0].url} alt="" style={{maxWidth: 50, maxHeight: 50, minHeight: 48}}/> <br />
                         {cart?.product.price} */}
-                        </li>
+                        </div>
                     ))}
                 </Offcanvas.Body>
             </Container> <hr />

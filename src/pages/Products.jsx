@@ -61,7 +61,7 @@ const Products = () => {
     }
 
     const down = () => {
-        if (quantity > 0) {
+        if (quantity > 1) {
             setQuantity(quantity - 1);
         }
     }
@@ -156,19 +156,19 @@ const Products = () => {
                 </Col>
             </Row>
             <h4 style={{ color: "#f85555" }}>Discover similar items</h4> <br />
-            <CardGroup style={{ textDecoration: "none" }}>
+            <CardGroup>
                 {productsFiltered.map(product => (
-                    <Card key={product.id} className='cardsGroup' style={{ textDecoration: "none" }}>
+                    <Card key={product.id} className='cardsGroup'>
                         <Link to={`/products/${product.id}`}>
                             <Container className="my-2">
                                 <Card.Img variant="top" src={product.images?.[0].url} style={{ height: 150, minHeight: 150, objectFit: "contain" }} alt="" className='img-fluid' />
                                 <hr />
-                                <Card.Body style={{ textDecoration: "none" }}>
+                                <Card.Body >
                                     <Card.Title >{product.brand}</Card.Title>
                                     <Card.Text >
                                         {product.title}
                                     </Card.Text>
-                                    <Card.Text style={{ color: "grey", textDecoration: "none" }}>
+                                    <Card.Text style={{ color: "grey"}}>
                                         <b>Price:</b> {" "} ${product.price}
                                     </Card.Text>
                                 </Card.Body>
