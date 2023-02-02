@@ -5,10 +5,8 @@ import Container from 'react-bootstrap/Container';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { filterProductsCategoryThunk } from '../store/slices/products.slice';
-import { AiOutlineShoppingCart } from 'react-icons/Ai';
-import { AiOutlineArrowUp } from 'react-icons/Ai';
-import { AiOutlineArrowDown } from 'react-icons/Ai';
 import { addPurchasesthunk } from '../store/slices/cart.slice';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Products = () => {
 
@@ -125,9 +123,9 @@ const Products = () => {
                                 <b style={{ color: "ligthGray" }}>Price</b> <br /> ${products.price}
                             </div>
                             <div className='quantityCart'>
-                                <button onClick={down}><AiOutlineArrowDown /></button>
+                                <button onClick={down}><FontAwesomeIcon icon="fa-sharp fa-solid fa-arrow-down" /></button>
                                 <article>{quantity}</article>
-                                <button onClick={up}> <AiOutlineArrowUp /></button>
+                                <button onClick={up}> <FontAwesomeIcon icon="fa-sharp fa-solid fa-arrow-up" /> </button>
                             </div>
 
 
