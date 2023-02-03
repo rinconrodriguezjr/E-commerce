@@ -39,23 +39,23 @@ export const purchaseCartThunk =() => (dispatch) =>{
 
 export const deleteCarThunk = (id) => (dispatch) => {
     return axios.delete('https://e-commerce-api-v2.academlo.tech/api/v1/cart/' + id, getConfig())
-        .then(res => {
-            swal({
-                title: "Eliminando Carrito",
-                text: "Se perdera tu producto!",
-                icon: "warning",
-                buttons: "ok",
-                dangerMode: true,
-            })
+        // .then(res => {
+        //     swal({
+        //         title: "Eliminando Carrito",
+        //         text: "Se perdera tu producto!",
+        //         icon: "warning",
+        //         buttons: "ok",
+        //         dangerMode: true,
+        //     })
                 .then(() => {
-                    dispatch(carGetThunk())
+                    dispatch(getCartsThunk())
                 });
-        })
+        // })
 }
 
 export const modiffyQuantityThunk = (id,quantity) => (dispatch) => {
     return axios.put('https://e-commerce-api-v2.academlo.tech/api/v1/cart/'+ id,quantity, getConfig())
-        .then(() => dispatch(carGetThunk()))
+        .then(() => dispatch(getCartsThunk()))
 }
 
 export const { setCarts } = cartSlice.actions;

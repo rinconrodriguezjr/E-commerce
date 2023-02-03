@@ -154,10 +154,10 @@ const Products = () => {
                 </Col>
             </Row>
             <h4 style={{ color: "#f85555" }}>Discover similar items</h4> <br />
-            <CardGroup>
+            <CardGroup >
                 {productsFiltered.map(product => (
                     <Card key={product.id} className='cardsGroup'>
-                        <Link to={`/products/${product.id}`}>
+                        <Link to={`/products/${product.id}`} style={{textDecoration: "none"}}>
                             <Container className="my-2">
                                 <Card.Img variant="top" src={product.images?.[0].url} style={{ height: 150, minHeight: 150, objectFit: "contain" }} alt="" className='img-fluid' />
                                 <hr />
