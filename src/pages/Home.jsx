@@ -93,14 +93,14 @@ const Home = () => {
           <h1 className="hometitle">Home</h1>
           <InputGroup className="mb-3">
             <Form.Control
-              placeholder="Recipient's username"
+              placeholder="Escribe el producto que necesitas o estas buscando"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
               value={productsSearch}
               onChange={e => setProductsSearch(e.target.value)}
             />
-            <Button onClick={() => dispatch(productsFilterHeadLineThunk(productsSearch))} type="submit" variant="outline-secondary" id="button-addon2">
-              Button
+            <Button onClick={() => dispatch(productsFilterHeadLineThunk(productsSearch))} style={{backgroundColor:"var(--primary)", color: "white"}} type="submit" variant="outline-secondary" id="button-addon2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVFJREFUSEvVleExBEEQRt9FQAoiQATIgAgQASJABIgAESACZEAEyIAIqKd6qub2Zmen7N4P/eu2dqdf99dfz81YcsyWnJ8+wCpwBOwCG1HEC3APXAGfrYWVAAfABSCkFCY/AW5aIF2Aya/j4ANwCTzF8zZwBmzF8150VOXkACt+i8oPKxUKOQ2Z1obkygHpoJWrfS3syk7Oo6veb3OAQ1wHdjJZ+g4q1yPgmc1aJTngOz5stW7T92MBXxW3/db7V4mc0R3wDChX0wzSkF0mLdgyZPdBKzcBtOk7sBLO0CGlSIV8xJZXt7o70NS6ibWiyZTBUAr9nyQZtGh3Bqlat9m27aQUDtb3wrSpv2/7NKpddsexcO6G8RpXgwmVJe2N77yX3P6FaPV86Wx+b/VCxgBS0v2MvtDJWMAgZApAFzJ3E08FSBCtPfdHNCWg6NT/D/gBeOVFGZeTouUAAAAASUVORK5CYII="/>
             </Button>
           </InputGroup>
           <Row xs={1} md={2} lg={3} className="g-4">

@@ -30,7 +30,7 @@
     font-weight: 400;
     width: 260px;
     text-align: center;
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .hometitle{
@@ -205,4 +205,72 @@ color: var(--primary);
     text-decoration: none;
     list-style: none;
     color: black;
+}
+
+.product_inf {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.product_inf img {
+    height: 100px;
+    object-fit: contain;
+    width: 100px;
+    
+}
+.details {
+    flex: 1 1;
+    padding: 0 10px;
+}
+.btns {
+    display: flex;
+}
+
+.list {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.quantity-box button {
+    background: none;
+    height: 30px;
+    line-height: 1.9;
+    width: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid lightgray;
+}
+.quantity-box .value {
+    line-height: 1.7;
+    padding: 0 20px;
+    border: 1px solid lightgray;
+}
+.button-delete  button{
+    background: transparent;
+    color: #f85555;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.total {
+    text-align: right;
+    
+}
+.label {
+    color: gray;
+    font-size: 0.8rem;
+    margin-right: 20px;
+}
+.similar_items {
+    margin-top: 30px;
+}
+.check {
+    border-top: 2px solid gray;
+    padding: 45px 20px;
+}
+
+.btn_check{
+    background-color: var(--primary);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }

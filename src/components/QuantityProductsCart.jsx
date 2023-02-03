@@ -17,10 +17,10 @@ const QuantityProductsCart = ({ handleClose, cart }) => {
 
     return (
         <li key={cart.id} style={{ listStyle: 'none' }} className='list'>
-            <div className='product_inf'>
-                <img src={cart.product.images[0].url} alt="" className='img-fluid' />
+            <div className='product_inf' style={{display: "flex"}}>
+                <img src={cart.product.images[0].url}  alt="" className='img-fluid' />
                 <div className='details'>
-                    <Link to={`/products/${cart.product.id}`} onClick={handleClose} className='title'>{cart.product.title}</Link>
+                    <Link to={`/products/${cart.product.id}`} style={{textDecoration: "none"}} onClick={handleClose} className='title'>{cart.product.title}</Link>
                     <div className='quantity-box'>
                         <div className='btns'>
                             <button onClick={() => updateQuantity(cart.quantity - 1)}
