@@ -37,11 +37,16 @@
     color: var(--primary);
 }
 
+.categoriesCaret{
+    display: flex;
+    flex-direction: row;
+}
 
 
 .toggleCategories{
     width: 100%;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
+
     color: white;
     /* display: flex;
     flex-direction: row;
@@ -49,10 +54,9 @@
 }
 
 .categories{
-    color: white;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
+    /* color: white; */
+    width: 100%;
+    background-color: white;
 }
 
 .footer{

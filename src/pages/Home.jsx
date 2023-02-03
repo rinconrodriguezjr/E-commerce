@@ -46,12 +46,12 @@ const Home = () => {
         {/* DROPDOWN */}
         <Col lg={3}>
           <Dropdown isOpen={dropdown} toggle={openCloseDrop}>
-            <DropdownToggle className="toggleCategories" >
+            <DropdownToggle className="toggleCategories" caret style={{background:"var(--primary)"}}>
               {/* <DropdownToggle className="toggleCategories" > caret  */}
-              <h4> <b>Categories</b> </h4>
+              <h4 style={{background:"var(--primary)"}}> <b>Categories</b> </h4>
             </DropdownToggle>
 
-            <DropdownMenu>
+            <DropdownMenu style={{ width: "100%"}}>
               {
                 categories.map(category => (
                   <ListGroup.Item key={category.id}
@@ -141,7 +141,7 @@ const Home = () => {
                     </Container> */}
                     <Card.Body>
                       {product.brand}
-                      <Card.Title className="cardTitle" style={{ color: "black" }}>{product.title}</Card.Title>
+                      <Card.Title className="cardTitle" style={{ color: "black" }}>{product.title.slice(0,25)}</Card.Title>
                       Price:
                       <Card.Text>
                         {/* <b>Description:</b> {product.description} <br /> <br /> */}
