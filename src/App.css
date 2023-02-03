@@ -200,3 +200,9 @@ color: var(--primary);
     height: 40px;
     align-items: center; */
 }
+
+.purchaseContainer{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
